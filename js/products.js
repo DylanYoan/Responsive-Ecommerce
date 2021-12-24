@@ -5,7 +5,7 @@ Category Products
 */
 const getProducts = async ()=>{
     try {
-        const results = await fetch('/data/products.json');
+        const results = await fetch('https://github.com/DylanYoan/Responsive-Ecommerce/blob/main/data/products.json');
         const data = await results.json();
         const products = data.products;
         return products;
