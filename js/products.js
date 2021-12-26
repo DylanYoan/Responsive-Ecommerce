@@ -23,8 +23,8 @@ window.addEventListener("DOMContentLoaded", async () => {
 const CategoryCenter = document.querySelector('.category__center');
 
 // Display Products
-const displayProductItems = items =>{
-    let displayProduct = items.map(product=>
+const displayProductItems = item =>{
+    let displayProduct = item.map(product=>
         `<div class="product category__product">
         <div class="product__header">
             <img src=${product.image} alt="Samsung 2 Img"  />
